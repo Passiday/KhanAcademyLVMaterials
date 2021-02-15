@@ -15,7 +15,7 @@ div.exerciseContainer {
     border: 3px solid black;
     width: 1280px;
     height: 720px;
-    position: absolute;
+    position: relative;
 }
 img.exerciseScreenshot {
     border: 2px solid #bbb;
