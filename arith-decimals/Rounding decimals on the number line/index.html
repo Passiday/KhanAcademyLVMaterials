@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rounding decimals on the number line</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    <style>
+      input[type="text"].blueFocus {
+        border: solid 2px #ccc;
+      }
+      input[type="text"].blueFocus:focus {
+        outline: none;
+        border-color: #6293be;
+        box-shadow: 0 0 10px #5066ed;
+      }
+    </style>
+    <script>
+      function registerEvents() {
+        const textbox1 = document.getElementById("textbox1");
+        const textbox1_onfocus = document.getElementById("textbox1_onfocus");
+        textbox1.addEventListener("focus", (e) => textbox1_onfocus.style.display = "block");
+        textbox1.addEventListener("blur", (e) => textbox1_onfocus.style.display = "none");
+
+        const textbox2 = document.getElementById("textbox2");
+        const textbox2_onfocus = document.getElementById("textbox2_onfocus");
+        textbox2.addEventListener("focus", (e) => textbox2_onfocus.style.display = "block");
+        textbox2.addEventListener("blur", (e) => textbox2_onfocus.style.display = "none");
+
+        const textbox3 = document.getElementById("textbox3");
+        const textbox3_onfocus = document.getElementById("textbox3_onfocus");
+        textbox3.addEventListener("focus", (e) => textbox3_onfocus.style.display = "block");
+        textbox3.addEventListener("blur", (e) => textbox3_onfocus.style.display = "none");
+
+        const textbox4 = document.getElementById("textbox4");
+        const textbox4_onfocus = document.getElementById("textbox4_onfocus");
+        textbox4.addEventListener("focus", (e) => textbox4_onfocus.style.display = "block");
+        textbox4.addEventListener("blur", (e) => textbox4_onfocus.style.display = "none");
+
+        const textbox5 = document.getElementById("textbox5");
+        const textbox5_onfocus = document.getElementById("textbox5_onfocus");
+        textbox5.addEventListener("focus", (e) => textbox5_onfocus.style.display = "block");
+        textbox5.addEventListener("blur", (e) => textbox5_onfocus.style.display = "none");
+
+    </script>
+    <script>
+      function showHide(showLst, hideLst) {
+        if (showLst) showLst.forEach((id) => document.getElementById(id).style.display = "block");
+        if (hideLst) hideLst.forEach((id) => document.getElementById(id).style.display = "none");
+      }
+      function registerEvents() {
+        const choiceCOff = document.getElementById("Choice-C-off");
+        const choiceCOn = document.getElementById("Choice-C-on");
+        choiceCOff.addEventListener("click", (e) => showHide(["Choice-C-on"], ["Choice-C-off"]));
+        choiceCOn.addEventListener("click", (e) => showHide(["Choice-C-off"], ["Choice-C-on"]));
+      }
+      window.addEventListener("load", registerEvents);
+    </script>
+  </head>
+  <body>
+    <h1>Unit: arith-decimals</h1>
+    <h1>Title: Rounding decimals on the number line</h1>
+    <h2>Exercise 1</h2>
+    <img class="exerciseScreenshot" src="Exercise 1.png" width="400">
+    <h3>Notes:</h3>
+    <ul>
+      <li>Kadrā jāienes skaitļu taisni no oriģinālā video, jo autors ar to interaktīvi darbojas. 
+    </ul>
+    <div class="exerciseContainer" style="background-image:url('Exercise 1- latvian.png')">
+      <div style="margin-top:58px; margin-left:80px">
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold;";>Novieto punktu uz <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(12{,}5\)</span> skaitļu taisnē!</div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 65px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(9\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 53px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(10\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(11\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(12\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(13\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(14\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 42px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(15\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(16\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(17\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(18\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 42px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(19\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 185px; margin-left: 42px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(20\)</span></div><div class="exerciseDescription" style=" margin-top: 185px; margin-left: 41px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(21\)</span></div>
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold; margin-top: 311px;";>Cik ir <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(12{,}5\)</span> noapaļots līdz tuvākajam desmitam?</div>
+        <input type="text" id="textbox1" class="blueFocus" style="width:192px; height:37px; font-size:20.0px; margin-top: 61px; margin-left: 0px;"/>
+        <div style="position:relative;"><div id="textbox1_onfocus" style="display:none; position:absolute; left:2px; top:-3px;"></div></div>
+      </div>
+    </div>
+
+
+    <h2>Exercise 2</h2>
+    <img class="exerciseScreenshot" src="Exercise 2.png" width="400">
+    <h3>Notes:</h3>
+    <ul>
+      <li>Kadrā jāienes skaitļu taisni no oriģinālā video, jo autors ar to interaktīvi darbojas. 
+    </ul>
+    <div class="exerciseContainer" style="background-image:url('Exercise 2- latvian.png')">
+      <div style="margin-top:59px; margin-left:80px">
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold;";>Novieto punktu uz <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(0{,}136\)</span>.</div>
+        <div class="exerciseDescription" style=" margin-top: 184px; margin-left: 38px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(0{,}13\)</span></div>
+        <div class="exerciseDescription" style=" margin-top: 184px; margin-left: 925px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(0{,}14\)</span></div>
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold; margin-top: 311px;";>Cik ir <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(0{,}136\)</span>, noapaļots līdz tuvākajai simtdaļai?</div>
+        <input type="text" id="textbox2" class="blueFocus" style="width:192px; height:37px; font-size:20.0px; margin-top: 61px; margin-left: 0px;"/>
+        <div style="position:relative;"><div id="textbox2_onfocus" style="display:none; position:absolute; left:2px; top:-3px;"></div></div>
+      </div>
+    </div>
+
+
+    <h2>Exercise 3</h2>
+    <img class="exerciseScreenshot" src="Exercise 3.png" width="400">
+    <h3>Notes:</h3>
+    <ul>
+      <li>Fons ir lielākā izmērā (pa vertikāli), jo video tiek ritināts uz augšu un leju.
+      <li>Fons nesatur "khanacademy.org" overleju apakšējā labajā stūrī. To ir jāpievieno, montējot video.
+    </ul>
+    <div class="exerciseContainer" style="height: 1246px; background-image:url('Exercise 3- latvian.png')">
+      <div style="margin-top:59px; margin-left:80px">
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold;">Kurš no šiem punktiem atrodas uz <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(44{,}197\)</span> skaitļu taisnē?</div>
+        <div style="position: relative; margin-top: 76px; height: 40px;">
+          <div style="position: absolute; left: 130px;"><span class="exerciseMath" style="color: #2aba55; font-size:34.7px;">\(\textrm {A}\)</span></div>
+          <div style="position: absolute; left: 429px;"><span class="exerciseMath" style="color: #7843a3; font-size:34.7px;">\(\textrm {B}\)</span></div>
+          <div style="position: absolute; left: 480px;"><span class="exerciseMath" style="color: #24b7ca; font-size:34.7px;">\(\textrm {C}\)</span></div>
+        </div>
+        
+        <div style=" margin-top: 68px;">
+        <div style="margin-left: 55px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(40\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(41\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(42\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(43\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(44\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(45\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(46\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(47\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(48\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(49\)</span></div>
+        <div style="margin-left: 58px; float: left;"><span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(50\)</span></div>
+        </div>
+
+        <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold; margin-top: 209px;">Izvēlies atbildi:</div>
+
+        <div style="margin-left: 110px; position: relative;">
+          <div class="exerciseDescription" style="position: absolute; top: 232px; color: #444444; font-size: 34.7px; font-weight: normal;">Punkts <span class="exerciseMath" style="color: #7843a3; font-size:35px;">\(\textrm {B}\)</span></div>
+          <div class="exerciseDescription" style="position: absolute; top: 90px; color: #444444; font-size: 34.7px; font-weight: normal;">Punkts <span class="exerciseMath" style="color: #2aba55; font-size:35px;">\(\textrm {A}\)</span></div>
+          <div class="exerciseDescription" style="position: absolute; top: 375px; color: #444444; font-size: 34.7px; font-weight: normal;">Punkts <span class="exerciseMath" style="color: #24b7ca; font-size:35px;">\(\textrm {C}\)</span></div>
+        </div>
+        
+        <svg style="display:block; width:60px; height:60px; margin-top:85px; margin-left:11px;">
+          <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="scale(4.7, 4.7) translate(0,-284.3)">
+    <g
+       id="g1491"
+       transfkorm="matrix(1.0629839,0,0,1.0631507,-0.01868527,-18.737068)">
+      <g
+         id="text1382"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.99276161px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#818083ff;fill-opacity:1;stroke:none"
+         aria-label="A">
+        <path
+           id="path1466"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.99276161px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;"
+           d="M 8.8280896,293.06909 H 7.7286417 l -0.4370476,-1.137 H 5.2907356 l -0.4131466,1.137 H 3.8054566 l 1.9496421,-5.00556 h 1.0687179 z m -1.8608667,-1.98037 -0.6897158,-1.85745 -0.676058,1.85745 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path871"
+         d="m 6.2402344,284.53906 c -3.4302201,0 -6.22265627,2.79049 -6.22265627,6.22071 0,3.43022 2.79243617,6.22265 6.22265627,6.22265 3.4302201,0 6.2226566,-2.79243 6.2226566,-6.22265 0,-3.43022 -2.7924365,-6.22071 -6.2226566,-6.22071 z m 0,1.06055 c 2.8561256,0 5.1601566,2.30403 5.1601566,5.16016 0,2.85612 -2.304031,5.16015 -5.1601566,5.16015 -2.8561256,0 -5.1601563,-2.30403 -5.1601563,-5.16015 0,-2.85613 2.3040307,-5.16016 5.1601563,-5.16016 z"
+         style="color:#818083ff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#818083ff;solid-opacity:1;vector-effect:none;fill:#818083ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.06227219;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+        </svg>
+      <svg style="display:block; width:60px; height:60px; margin-top:82px; margin-left:11px;">
+          <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="scale(4.5, 4.5) translate(0,-283.7)">
+        <path
+       style="color:#818083ff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#818083ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.12926686;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 6.6145834,283.77083 C 2.9683147,283.77083 0,286.73754 0,290.38439 0,294.03123 2.9683147,297 6.6145834,297 c 3.6462686,0 6.6145836,-2.96877 6.6145836,-6.61561 0,-3.64685 -2.968315,-6.61356 -6.6145836,-6.61356 z m 0,1.12753 c 3.0360156,0 5.4851636,2.44953 5.4851636,5.48603 0,3.03648 -2.449148,5.48601 -5.4851636,5.48601 -3.0360155,0 -5.485163,-2.44953 -5.485163,-5.48601 0,-3.0365 2.4491475,-5.48603 5.485163,-5.48603 z"
+       id="path871"
+       inkscape:connector-curvature="0" />
+    <g
+       aria-label="B"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50615263px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#818083ff;fill-opacity:1;stroke:none;stroke-width:0.07412618;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="text875">
+      <path
+         d="M 4.6520934,287.48137 H 6.79985 q 0.6377298,0 0.9492644,0.055 0.3151998,0.0513 0.5607624,0.21991 0.2492277,0.16859 0.4141578,0.45081 0.1649301,0.27855 0.1649301,0.62673 0,0.37751 -0.2052463,0.69271 -0.2015813,0.3152 -0.5497671,0.4728 0.4911253,0.14294 0.7550134,0.48746 0.2638882,0.34452 0.2638882,0.80999 0,0.36651 -0.1722603,0.7147 -0.1685952,0.34452 -0.4654694,0.55343 -0.2932091,0.20524 -0.7256925,0.25289 -0.2712184,0.0293 -1.3084456,0.0366 H 4.6520934 Z m 1.0848737,0.89429 v 1.24248 h 0.711032 q 0.6340646,0 0.7879994,-0.0183 0.2785486,-0.033 0.4361485,-0.19059 0.161265,-0.16126 0.161265,-0.42148 0,-0.24923 -0.1392743,-0.40317 -0.1356092,-0.1576 -0.4068276,-0.19058 -0.161265,-0.0183 -0.9272737,-0.0183 z m 0,2.13676 v 1.43673 h 1.0042411 q 0.5864182,0 0.744018,-0.033 0.2418975,-0.044 0.3921672,-0.21257 0.1539348,-0.17226 0.1539348,-0.45814 0,-0.2419 -0.1172837,-0.4105 -0.1172836,-0.16859 -0.3408555,-0.24556 -0.2199069,-0.077 -0.9602598,-0.077 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50615263px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.07412618;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1558" />
+    </g>
+  </g>
+      </svg>
+      <svg id="Choice-C-off" style="display:none; width:80px; height:80px; margin-top:73px; margin-left:11px;">
+          <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="scale(4.5, 4.5) translate(0,-281.7)">
+        <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#818083ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.12926686;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 6.6145834,283.77083 C 2.9683147,283.77083 0,286.73754 0,290.38439 0,294.03123 2.9683147,297 6.6145834,297 c 3.6462686,0 6.6145836,-2.96877 6.6145836,-6.61561 0,-3.64685 -2.968315,-6.61356 -6.6145836,-6.61356 z m 0,1.12753 c 3.0360156,0 5.4851636,2.44953 5.4851636,5.48603 0,3.03648 -2.449148,5.48601 -5.4851636,5.48601 -3.0360155,0 -5.485163,-2.44953 -5.485163,-5.48601 0,-3.0365 2.4491475,-5.48603 5.485163,-5.48603 z"
+       id="path871"
+       inkscape:connector-curvature="0" />
+    <g
+       aria-label="C"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.43081045px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#818083ff;fill-opacity:1;stroke:none;stroke-width:0.07338215;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="text881">
+      <path
+         d="m 7.9835324,290.84743 1.0413294,0.33018 q -0.2394695,0.8708 -0.7982316,1.29531 -0.5551338,0.42089 -1.4114186,0.42089 -1.059471,0 -1.7415962,-0.72204 -0.6821252,-0.72566 -0.6821252,-1.98106 0,-1.32797 0.6857535,-2.06089 0.6857535,-0.73655 1.8032778,-0.73655 0.9760195,0 1.5855782,0.5769 0.3628325,0.34106 0.5442488,0.97965 l -1.0630994,0.25398 q -0.094336,-0.41363 -0.3954874,-0.6531 -0.2975227,-0.23947 -0.7256651,-0.23947 -0.591417,0 -0.9615062,0.42452 -0.3664609,0.42451 -0.3664609,1.37513 0,1.00868 0.3628325,1.43682 0.3628326,0.42814 0.9433646,0.42814 0.4281424,0 0.7365501,-0.27212 0.3084077,-0.27213 0.4426557,-0.85629 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.43081045px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.07338215;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2362" />
+    </g>
+  </g>
+      </svg>
+      <svg id="Choice-C-on" style="display:block; width:80px; height:80px; margin-top:73px; margin-left:0px;">
+          <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="scale(4.5, 4.5) translate(-1.4,-277.7)">
+        <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="circle883-6"
+         d="m 10.323475,279.94382 c -3.6669405,0 -6.6517905,2.98485 -6.6517905,6.65179 0,3.66694 2.98485,6.65179 6.6517905,6.65179 3.666934,0 6.651785,-2.98485 6.651785,-6.65179 0,-3.66694 -2.984851,-6.65179 -6.651785,-6.65179 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#71c00b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.1355778;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <g
+         id="text881-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.47532034px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:0.0738217;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         aria-label="C">
+        <path
+           id="path2509"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.47532034px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:0.0738217;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 11.688846,287.09631 1.047567,0.33215 q -0.240904,0.87602 -0.803013,1.30307 -0.558459,0.42341 -1.419873,0.42341 -1.0658173,0 -1.7520283,-0.72636 -0.6862111,-0.73001 -0.6862111,-1.99293 0,-1.33592 0.6898611,-2.07324 0.6898611,-0.74096 1.8140793,-0.74096 0.981866,0 1.595076,0.58036 0.365005,0.34311 0.547508,0.98552 l -1.069467,0.2555 q -0.0949,-0.4161 -0.397856,-0.65701 -0.299305,-0.2409 -0.730012,-0.2409 -0.5949595,0 -0.9672655,0.42705 -0.3686559,0.42706 -0.3686559,1.38338 0,1.01471 0.3650058,1.44542 0.3650059,0.43071 0.9490156,0.43071 0.430707,0 0.740962,-0.27376 0.310255,-0.27375 0.445307,-0.86141 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path2413"
+         d="m 10.324219,277.76562 c -4.8630079,0 -8.8300784,3.96707 -8.8300784,8.83008 0,4.863 3.9670713,8.83008 8.8300784,8.83008 4.863007,0 8.830078,-3.96708 8.830078,-8.83008 0,-4.86301 -3.967071,-8.83008 -8.830078,-8.83008 z m 0,1.125 c 4.251852,0 7.703125,3.45322 7.703125,7.70508 0,4.25184 -3.451272,7.70313 -7.703125,7.70313 -4.2518532,0 -7.7050784,-3.45129 -7.7050784,-7.70313 0,-4.25186 3.453226,-7.70508 7.7050784,-7.70508 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#71c00b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.12621641;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+      </svg>
+
+      <div class="exerciseDescription" style="color:#444444; font-size:35px;font-weight:bold; margin-top: 88px;">Cik ir <span class="exerciseMath" style="color:#444444; font-size:34.7px;">\(44{,}197\)</span>, noapaļots līdz tuvākajam veselajam skaitlim?</div>
+
+      <input type="text" class="blueFocus" style="width:192px; height:37px; font-size:20.0px; margin-top: 61px; margin-left: 0px;"/>
+      </div>
+    </div>
+
+    <h2>Exercise 4</h2>
+    <img class="exerciseScreenshot" src="Exercise 4.png" width="400">
+    <div class="exerciseContainer" style="background-image:url('Exercise 4- latvian.png')">
+      <div style="margin-top:59px; margin-left:80px">
+        <div class="exerciseDescription" style="color: #444444; font-size:35px;font-weight:bold;";>Cik ir <span class="exerciseMath" style="color: #2aba55; font-size:34.7px;">\(\textrm {A}\)</span>, noapaļots līdz tuvākajai tūkstošdaļai?</div>
+        <input type="text" class="blueFocus" style="width:192px; height:37px; font-size:20.0px; margin-top: 61px; margin-left: 0px;"/>
+        <div class="exerciseDescription" style="color: #444444; font-size:35px;font-weight:bold; margin-top: 55px;";>Cik ir <span class="exerciseMath" style="color: #2aba55; font-size:34.7px;">\(\textrm {A}\)</span>, noapaļots līdz tuvākajai simtdaļai?</div>
+        <input type="text" class="blueFocus" style="width:192px; height:37px; font-size:20.0px; margin-top: 61px; margin-left: 0px;"/>
+        <div style="margin-top: 78px; margin-left: 895px;"><span class="exerciseMath" style="color: #7ab763; font-size:34.7px;">\(\textrm {A}\)</span></div>
+        
+        <div style="margin-top: 57px; position: relative;">
+          <div style="left: 37px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}07\)</span></div>
+          <div style="left: 227px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}072\)</span></div>
+          <div style="left: 427px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}074\)</span></div>
+          <div style="left: 627px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}076\)</span></div>
+          <div style="left: 827px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}078\)</span></div>
+          <div style="left: 1037px; position: absolute;"><span class="exerciseMath" style="color: #444444; font-size:34.7px;">\(0{,}08\)</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
