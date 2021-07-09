@@ -18,6 +18,7 @@
         box-shadow: 0 0 10px #5066ed;
       }
     </style>
+    <script src="../../js/common.js"></script>
     <script>
       function registerEvents() {
         const textbox1 = document.getElementById("textbox1");
@@ -47,10 +48,6 @@
 
     </script>
     <script>
-      function showHide(showLst, hideLst) {
-        if (showLst) showLst.forEach((id) => document.getElementById(id).style.display = "block");
-        if (hideLst) hideLst.forEach((id) => document.getElementById(id).style.display = "none");
-      }
       function registerEvents() {
         const choiceCOff = document.getElementById("Choice-C-off");
         const choiceCOn = document.getElementById("Choice-C-on");
