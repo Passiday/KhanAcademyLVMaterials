@@ -18,12 +18,18 @@ ul li {
     font-family: "Arial";
     font-size: 20px;
 }
+
 div.exerciseContainer {
     background-color: #fff;
     border: 3px solid black;
     width: 1280px;
     height: 720px;
     position: relative;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overscroll-behavior: none;
 }
 img.exerciseScreenshot {
     border: 2px solid #bbb;
@@ -34,6 +40,11 @@ div.exerciseDescription {
     font-family: "Arial";
     font-size: 32.8px;
     font-weight: bold;
+}
+div.ohNo {
+    color:#000;
+    font-family: "Arial";
+    font-size:25px;
 }
 div.exerciseAnswersTitle {
     color: #444444;
@@ -56,6 +67,12 @@ div.exerciseAnswersOption input[type="checkbox"] {
     margin-right: 22px;
     border: 2px solid #888;
 }
+div.exerciseAnswersOption input[type="radio"] {
+    transform: scale(1.8);
+    margin-left: 13px;
+    margin-right: 22px;
+    border: 2px solid #888;
+}
 
 input.exerciseRadio {
     display: block;
@@ -66,4 +83,28 @@ input.exerciseRadio {
 
 .exerciseMath {
     font-size: 37px;
+}
+
+.khanAcademyOverlay {
+    position:relative;
+    z-index: 3;
+    font-size: 16px;
+    font-family: "Arial";
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+  
+.hideScrollbar {
+    /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Hide the scrollbar for IE, Edge, and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
