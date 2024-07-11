@@ -28,7 +28,7 @@ div.exerciseContainer {
     background-attachment: local;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     overscroll-behavior: none;
 }
 img.exerciseScreenshot {
@@ -59,7 +59,7 @@ div.exerciseAnswersOption {
     font-family: "Arial";
     font-size: 32.8px;
     font-weight: normal;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 }
 div.exerciseAnswersOption input[type="checkbox"] {
     transform: scale(1.8);
